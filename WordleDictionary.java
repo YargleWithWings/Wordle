@@ -8,11 +8,15 @@
 //package edu.willamette.cs1.wordle;
 
 /**
- * This class implements the dictionary for the Wordle project.
+ * This class implements the dictionary f   or the Wordle project.
  */
 
 public class WordleDictionary {
 
+    
+/**
+ * String array containing the words to randomly choose from for Wordle.
+ */
     public static final String[] WORDS_TO_PICK_FROM = {"aback",	"assay",	"blurb",
         "abase",	"asset",	"blurt",	"chaff",	"crazy",	"drain",	"fairy",	"frost",	"guest",	"ivory",	"lumen",	"musky",	"peril",	"quell",	"rural",	"shuck",	"spice",	"sweat",	"tract",	"vivid",
         "abate",	"atoll",	"blush",	"chain",	"creak",	"drake",	"faith",	"froth",	"guide",	"jaunt",	"lumpy",	"musty",	"perky",	"query",	"rusty",	"shunt",	"spicy",	"sweep",	"trade",	"vixen",

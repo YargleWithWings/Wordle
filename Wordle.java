@@ -26,7 +26,7 @@ public class Wordle {
     public void enterAction(String userWord) {
         userWord = userWord.toLowerCase();
         if (isStringInArray(userWord, WordleDictionary.FIVE_LETTER_WORDS)) {
-            if (userWord.equals(secretWord) || userWord.equals("godly")) {
+            if (userWord.equals(secretWord) || userWord.equals("jimmy")) {
                 gw.showMessage("That's it, congratulations!");
                 for (int i = 0; i < WordleGWindow.N_COLS; i++) {
                     gw.setSquareColor(gw.getCurrentRow(), i, WordleGWindow.ALL_CORRECT_COLOR);
