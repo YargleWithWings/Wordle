@@ -114,6 +114,7 @@ public class Wordle {
                 }
                 else {
                     gw.showMessage("Damnnn, better luck next time :(");
+                    gw.finish();
                 }
             }
         } else {
