@@ -27,7 +27,8 @@ public class Wordle {
         userWord = userWord.toLowerCase();
         if (isStringInArray(userWord, WordleDictionary.FIVE_LETTER_WORDS)) {
             if (userWord.equals(secretWord) || userWord.equals("jimmy")) {
-                gw.showMessage("That's it, congratulations!");
+                int randPhrase = (int)(Math.random()*5);
+                gw.showMessage(WordleDictionary.SUCCESS_PHRASES[randPhrase]);
                 for (int i = 0; i < WordleGWindow.N_COLS; i++) {
                     gw.setSquareColor(gw.getCurrentRow(), i, WordleGWindow.ALL_CORRECT_COLOR);
                 }
@@ -99,17 +100,18 @@ public class Wordle {
                 }
                 if (!(gw.getCurrentRow() == 5)) {
                     gw.setCurrentRow(gw.getCurrentRow() + 1);
+                    int randPhrase = (int)(Math.random()*5);
                     if (numGrays == WordleGWindow.N_COLS) {
-                        gw.showMessage("Wow, you're pretty shit at this :(");
+                        gw.showMessage(WordleDictionary.DID_BAD_PHRASES[randPhrase]);
                     } else if (numCorrect + numPresent == 1) {
-                        gw.showMessage("Mehh, you can do better :/");
+                        gw.showMessage(WordleDictionary.DID_MEDIOCRE_PHRASES[randPhrase]);
                     } else if (numCorrect + numPresent == WordleGWindow.N_COLS - 1
                             || numCorrect == WordleGWindow.N_COLS - 2) {
-                        gw.showMessage("Oooh, almost there :D");
+                        gw.showMessage(WordleDictionary.DID_FINE_PHRASES[randPhrase]);
                     } else if (numPresent == WordleGWindow.N_COLS) {
                         gw.showMessage("Just gotta rearrange them a lil bit");
                     } else {
-                        gw.showMessage("Good guess!");
+                        gw.showMessage(WordleDictionary.DID_GOOD_PHRASES[randPhrase]);
                     }
                 }
                 else {

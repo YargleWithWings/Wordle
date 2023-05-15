@@ -13,7 +13,11 @@
 
 public class WordleDictionary {
 
-    
+    public static final String[] SUCCESS_PHRASES = {"That's it, congratulations!","Wow, you got there!","Ok you did pretty good","You did it!","Fuck you >:("};
+    public static final String[] DID_BAD_PHRASES = {"Wow, you're pretty shit at this, aren't you :(", "You should be embarrassed", "That was...an attempt...", "How are you this bad bro", "Bruh is that Saffron playing or something?"};
+    public static final String[] DID_MEDIOCRE_PHRASES = {"Mehh, you can do better :/","Not great, not horrible","Just do better next time, ok", "Maybe your next guess will be good", "That was...fine"};
+    public static final String[] DID_FINE_PHRASES = {"Oooh, almost there :D", "You're so close!", "You're like...almost decent at this", "Sooooo close!","Bro come on, you got this"};
+    public static final String[] DID_GOOD_PHRASES = {"Just like death and taxes, you are inevitable", "Actually based brodin", "Yaass queen","Slay?","Muy poggers bestie"};
 /**
  * String array containing the words to randomly choose from for Wordle.
  */
@@ -963,7 +967,7 @@ public class WordleDictionary {
         "zines", "zings", "zingy", "zippy", "zitis", "zlote", "zloty",
         "zoaea", "zoeae", "zoeas", "zombi", "zonal", "zoned", "zoner",
         "zones", "zonks", "zooey", "zooid", "zooks", "zooms", "zoons",
-        "zoril", "zowie", "zymes", "soare"
+        "zoril", "zowie", "zymes", "soare", "glorp", "zoink"
     };
 
     private WordleDictionary() {
