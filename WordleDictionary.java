@@ -967,7 +967,7 @@ public class WordleDictionary {
         "zines", "zings", "zingy", "zippy", "zitis", "zlote", "zloty",
         "zoaea", "zoeae", "zoeas", "zombi", "zonal", "zoned", "zoner",
         "zones", "zonks", "zooey", "zooid", "zooks", "zooms", "zoons",
-        "zoril", "zowie", "zymes", "soare", "glorp", "zoink"
+        "zoril", "zowie", "zymes", "soare", "glorp", "zoink", "cummy"
     };
 
     private WordleDictionary() {
